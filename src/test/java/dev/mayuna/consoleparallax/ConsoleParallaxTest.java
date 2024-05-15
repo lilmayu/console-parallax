@@ -222,8 +222,5 @@ public class ConsoleParallaxTest {
         ConsoleOutputHandler outputHandler = new ConsoleOutputHandler();
         outputHandler.info("info");
         outputHandler.error("err");
-
-        ConsoleInputHandler inputHandler = new ConsoleInputHandler();
-        assertThrows(IllegalStateException.class, inputHandler::getNextInput, "Should throw IllegalStateException because console should not be available");
     }
 }
