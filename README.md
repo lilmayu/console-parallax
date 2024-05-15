@@ -86,7 +86,7 @@ dependencies {
 This class is the main class of the library. Calling `#start()` will start the command reader thread.
 
 The command reader thread calls `InputHandler#getNextInput()` to get the next input. The default implementation
-of `ConsoleInputHandler` calls `System.console().readLine()`.
+of `ConsoleInputHandler` calls `Scanner#nextLine()` on `System.in`.
 
 All commands are executed on `ConsoleParallax`'s command executor.
 
