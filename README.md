@@ -111,9 +111,9 @@ ConsoleParallax consoleParallax = new ConsoleParallax.Builder()
 
 Default implementations (click to see):
 
-- [`ConsoleInputHandler`](blob/main/src/main/java/dev/mayuna/consoleparallax/impl/ConsoleInputHandler.java)
-- [`ConsoleOutputHandler`](blob/main/src/main/java/dev/mayuna/consoleparallax/impl/ConsoleOutputHandler.java)
-- [`SimpleCommandParser`](blob/main/src/main/java/dev/mayuna/consoleparallax/impl/SimpleCommandParser.java)
+- [`ConsoleInputHandler`](src/main/java/dev/mayuna/consoleparallax/impl/ConsoleInputHandler.java)
+- [`ConsoleOutputHandler`](src/main/java/dev/mayuna/consoleparallax/impl/ConsoleOutputHandler.java)
+- [`SimpleCommandParser`](src/main/java/dev/mayuna/consoleparallax/impl/SimpleCommandParser.java)
 
 ### Custom implementations
 
@@ -127,7 +127,7 @@ implementation of `OutputHandler` and override the two methods in there - `#info
 
 ### Help command
 
-[There's pre-implemented help command](blob/main/src/main/java/dev/mayuna/consoleparallax/commands/HelpCommand.java)
+[There's pre-implemented help command](src/main/java/dev/mayuna/consoleparallax/commands/HelpCommand.java)
 that
 shows you all registered commands. You can register it by calling `ConsoleParallax#registerDefaultHelpCommand()`.
 
@@ -145,7 +145,7 @@ There are several methods:
 - `#getSyntax()` - returns command's syntax, e.g., `example <arg1> [arg2]`
 - `#getDescription()` - returns long description of the command, used in the help command
 
-[Here you can find pre-implemented Help command as a reference](blob/main/src/main/java/dev/mayuna/consoleparallax/commands/HelpCommand.java)
+[Here you can find pre-implemented Help command as a reference](src/main/java/dev/mayuna/consoleparallax/commands/HelpCommand.java)
 
 ### `CommandInvocationContext` class
 
