@@ -93,7 +93,7 @@ All commands are executed on `ConsoleParallax`'s command executor.
 You may create the `ConsoleParallax` instance with a (long) constructor or with its `Builder`:
 
   ```java
-ConsoleParallax consoleParallax = new ConsoleParallax.Builder()
+ConsoleParallax consoleParallax = ConsoleParallax.builder()
         .setInputHandler(/* input handler */)
         .setOutputHandler(/* output handler */)
         .setCommandParser(/* command parser */)
@@ -101,7 +101,7 @@ ConsoleParallax consoleParallax = new ConsoleParallax.Builder()
         .build();
 
 // The default implementation looks like this:
-ConsoleParallax consoleParallax = new ConsoleParallax.Builder()
+ConsoleParallax consoleParallax = ConsoleParallax.builder()
         .setInputHandler(new ConsoleInputHandler())
         .setOutputHandler(new ConsoleOutputHandler())
         .setCommandParser(new SimpleCommandParser())
