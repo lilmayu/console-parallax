@@ -37,6 +37,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            build/libs/java-discord-oauth2-api-*.jar
+            build/libs/console-parallax-*.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
