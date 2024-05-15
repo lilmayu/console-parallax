@@ -4,6 +4,7 @@ import dev.mayuna.consoleparallax.InputHandler;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Console implementation for {@link InputHandler}<br>
@@ -11,14 +12,14 @@ import java.io.Console;
  */
 public final class ConsoleInputHandler implements InputHandler {
 
+    private final Scanner scanner;
+
+    public ConsoleInputHandler() {
+        this.scanner = new Scanner(System.in);
+    }
+
     @Override
     public @NotNull String getNextInput() {
-        Console console = System.console();
-
-        if (console == null) {
-            throw new IllegalStateException("Console is not available");
-        }
-
-        return console.readLine();
+        return scanner.nextLine();
     }
 }
