@@ -29,7 +29,7 @@ With the magic of annotations and without. ***It is up to you.***
 ```java
 // Usually when program starts
 public static void main(String[] args) {
-    ConsoleParallax consoleParallax = new ConsoleParallax.Builder().build();
+    ConsoleParallax consoleParallax = ConsoleParallax.builder().build();
     consoleParallax.registerCommand(new ExampleCommand());
     consoleParallax.start();
     
